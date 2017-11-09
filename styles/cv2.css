@@ -18,4 +18,14 @@
 			overflow: hidden;
 			box-shadow: 0 0 6px #ccc;
     
+
+		}
+.header{
+    grid-area: header;
+}
+.side{
+    grid-area:side;
+}
+.main{
+    grid-area:main;
 }
