@@ -1,0 +1,159 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> CV | Generator</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <body>
+        <div class="container grid">
+            <header class="grid">
+                lorem40
+            </header>
+            
+            <div class="templates grid" id="templates">
+               <form  id="tembplateForm" class="grid">
+                <div>
+                    <input id="cv1" type="radio" value="1" name="cv">
+                    <label class="template" for="cv1"></label>
+                </div>
+                <div>
+                    <input id="cv2" type="radio" value="2" name="cv">
+                    <label class="template" for="cv2"></label>
+                </div>
+                <div>
+                    <input id="cv3" type="radio" value="3" name="cv">
+                    <label class="template" for="cv3"></label>
+                </div>
+                <div>
+                    <input id="cv4" type="radio" value="4" name="cv">
+                    <label class="template" for="cv4"></label>
+                </div>
+                </form>
+            </div>
+            
+            <span id="basic-form" class="grid">
+                
+            
+            <nav >
+                <ul id="buttons" class="grid">
+                    <li onclick="show('basic')" id="basicButton"><a>Basic Information</a></li>
+                    <li onclick="show('work')" id="workButton">Work Experience</li>
+                    <li onclick="show('qualifications')" id="qualificationsButton">Qualifications </li>
+                    <li onclick="show('education')" id="educationButton">Education</li>
+                    <li onclick="show('interests')" id="interestsButton">Interests</li>
+                    <li onclick="show('skills')" id="skillsButton">Skills</li>
+                </ul>
+            </nav>
+            
+            <main id="main">
+               <form id="mainForm" class="grid">
+           
+                      
+                  
+                   <div id="basic"  class=" inputs" >
+                             <span>
+                       <input class="value" type="text" id="fullName" name="fullName"  placeholder="Full name">
+                       <input class="value" type="email" id="email" name="email"  placeholder="E-mail">
+                       <input class="value" type="text"  id="phone" name="phone" placeholder="Phone number">
+                       
+                       </span>
+                       <span>
+                        <input class="value" type="text"  id="website" name="website" placeholder="Websites">
+                        <input class="value" type="text"  id="address" name="address" placeholder="Address">
+                       </span>
+                   </div>
+                   <div id="work" class=" grid inputs" >
+                    <span class="job">
+                        
+                  
+                     <span class="multi grid">
+                         
+                     
+                      <span>
+                       <input class="value" type="text" id="jobTitle" name="title" placeholder="Job title">
+                       <input class="value" type="text" id="jobCompany" name="company" placeholder="Company name">
+                       <input class="value" type="text" id="jobStartDate" name="startDate" placeholder="Start date">
+                       <input class="value" type="text" id="jobEndDate" name="endDate" placeholder="End date">
+                       </span>
+                       <textarea class="value" name="info" id="workInfo" cols="30" rows="10" placeholder="Other Information"></textarea>
+                       
+                       
+                       </span>
+                         <a  style="cursor:pointer" onclick="addField('job')"> Add New Field </a>
+                           <a style="cursor:pointer" onclick="removeField(this)" > Remove Feild</a>
+                           </span>
+                   </div>
+                   
+                   <div id="qualifications" class=" inputs">
+                       <textarea class="value" name="info" id="qualificationsInfo" cols="30" rows="10" placeholder="Other Information"></textarea>
+                       <span></span>
+                   </div>
+                   
+                   <div id="education" class=" inputs">
+                    <span  class="edu">
+                        
+                    
+                     <span class="grid multi">
+                      <span>
+                       <input class="value" type="text" name="course" placeholder="Course name">
+                       <input class="value" type="text"  name="inistitution" placeholder="Inistitution ">
+                       <input class="value" type="text" name="startDate" placeholder="Start date">
+                       <input class="value" type="text"  name="endDate" placeholder="End date">
+                       </span>
+                       <textarea class="value" name="info"  cols="20" rows="10" placeholder="Other Information"></textarea>
+                       </span>
+                       <a  style="cursor:pointer" onclick="addField('edu')"> Add New Field </a>
+                        <a style="cursor:pointer" onclick="removeField(this)" > Remove Feild</a>
+                       </span>
+                   </div>
+                   <div id="interests" class=" inputs">
+                       <textarea class="value" name="info" id="interestsInfo" cols="30" rows="10" placeholder="Add your interests"></textarea>
+                       <span></span>
+                   </div>
+                   <div id="skills" class=" inputs">
+                       <textarea class="value" name="info" id="skillsInfo" cols="30" rows="10" placeholder="Add your skills"></textarea> 
+                       <span></span>
+                   </div>
+                   </form>
+                </main>
+                </span>
+
+                
+                   <div id="submitButtonSection" class="grid">
+                   <div>
+                       
+                   </div>
+                   <div>
+                       <button class="submitButton" type="submit" onclick="submit()">Submit the Resume</button>
+                   </div>
+                   <div class="colorPickers">
+                     <span>
+                          <label for="primeColor">Primary Color:</label> <br>
+                       <input id="primeColor" type="color" class="color">
+                     </span>
+                     <span>
+                         <label for="primeTextColor"> Primary Text Color:</label> <br>
+                       <input type="color" id="primeTextColor" class="color">
+                     </span>
+                    <span>
+                          <label for="secondTextColor"> Secondary Text Color:</label> <br>
+                       <input type="color" id="secondTextColor" class="color">
+                     </span>
+                     
+                       
+                      
+                   </div>
+                   </div>    
+            <footer>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui perferendis hic obcaecati magni autem mollitia harum praesentium assumenda, molestias vitae.
+            </footer>
+        </div>
+
+    <script id="message-template" type="text/template">
+    
+        </script>
+        <script src="scripts/index.js"></script>
+    </body>
+</head>
+
+</html>

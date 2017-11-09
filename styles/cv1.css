@@ -1,0 +1,176 @@
+        
+		body {
+			background: #d5d1d1;
+			margin: 0;
+			padding: 0;
+			
+			font-family: 'Helvetica Neue', Helvetica, Arial;
+			line-height: 18px;
+			font-size: 12px;
+			
+			color: #222;
+		}
+		h1, h2, h3, h4 {
+			margin: 0 0 15px 0;
+			padding: 0;
+			font-weight: normal;
+            color:grey;
+		}
+		h1 {
+			font-size: 500%;
+		}
+		h2 {
+			font-size: 210%;
+		}
+		h3 {
+			font-size: 150%;
+		}
+		
+		p {
+			margin: 0 0 10px 0;
+		}
+		a {
+			color: #222;
+		}
+		/* ________________________________________________________ */
+/*
+		.rtl {
+			direction: rtl;
+		}
+*/
+		.clear {
+			clear: both;
+		}
+
+		#main {
+			background: #fff;
+			width: 900px;
+			padding: 35px;
+			margin: 0 auto 15px auto;
+			overflow: hidden;
+			
+			box-shadow: 0 0 6px #ccc;
+		}
+		
+		#title {
+			margin: 0px 0 30px 0;
+			line-height: 70px;
+			text-align: center;
+		}
+		
+/*
+		#credit {
+			margin-bottom: 20px;
+			font-size: 11px;
+			color: #999;
+			text-align: center;
+		}
+			#credit a {
+				color: #999;
+			}
+*/
+		
+		p label {
+			float: left;
+			margin-right: 10px;
+			min-width: 50px;
+		}
+			p label span.colon {
+				float: right;
+			}
+/*
+		p span.value {
+			float: left;
+			width: 70%;
+			display: block;
+		}
+*/
+		
+		.section {
+			margin-bottom: 40px;
+			padding-bottom: 20px;
+		}
+		
+		.item {
+			margin: 0 0 20px 0;
+		}
+
+		.basic {
+			padding: 0px 0px 0px 140px;
+		}
+		.basic p {
+			float: left;
+			width: 48%;
+			margin: 0 0 0px 0;
+		}
+		.basic p.full {
+			width: 100%;
+			float: none;
+		}
+			.basic .r {
+				float: right;
+			}
+
+		/* Sections _____________________________ */
+		
+		.section .title {
+			border-bottom: 1px solid #ddd;
+			padding-bottom: 5px;
+		}
+/*
+		.section span.value {
+			display: block;
+		}
+*/
+		.section h3 span.l, .section span.r {
+			width: 49%;
+			float: left;
+		}
+			.section span.r {
+				float: right;
+				text-align: right;
+			}
+			.education .school,
+			.work .job_title {
+				font-size: 120%;
+				display: block;
+				margin: 5px 0 5px 0;
+			}
+
+/*		 ___ photo ___ */
+/*
+		#photo {
+			width: 160px;
+			height: 200px;
+			overflow: hidden;
+			float: left;
+			margin-top: 12px;
+			border-radius: 4px;
+		}
+		#photo img {
+			width: 100%;
+			height: auto;
+		}
+
+		.header.photo {
+			margin-left: 190px;
+		}
+		.header.photo #title {
+			text-align: left;
+		}
+		.header.photo .basic-info {
+			float: none;
+			padding: 0;
+		}
+*/
+
+		@media screen and (max-width: 950px) {
+			body {
+				background: #fff;
+			}
+			#main {
+				box-shadow: none;
+				padding: 0;
+				padding: 5px;
+			}
+		}

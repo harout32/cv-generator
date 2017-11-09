@@ -1,0 +1,33 @@
+ 
+var info ={
+    "basic": {
+        "fullname":"harout zahrab artin",
+        "email":"harout.za.artin@gmail.com",
+        "phone":"0037455429407",
+        "websites":"www.google.com",
+        "address":"yerevan armenia"
+    },
+    "education": {
+        "course":"IT",
+        "endDate":"present",
+        "info":"best university ever",
+        "inistitution":"european university",
+        "startDate":"2017"
+    },
+    "interests": {
+        "info":"coocking, basketball, programming"
+    },
+    "skills": {
+        "info":"fast learner , self motivated"
+    },
+    "work": {
+        "company":"upsoft",
+        "endDate":"present",
+        "info":"the best company ever built",
+        "startDate":"2017",
+        "title":"web developer"
+    },
+    "qualifications":{
+        "info":"web developer with greate skills"
+    }
+}
