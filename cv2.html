@@ -4,59 +4,201 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded" rel="stylesheet">
 <!--    <link rel="stylesheet" href="styles/cv2.css">-->
+</head>
 <style>
-body {
-			background: #d5d1d1;
-			margin: 0;
-			padding: 0;
-			
-			font-family: 'Helvetica Neue', Helvetica, Arial;
-			line-height: 18px;
-			font-size: 12px;
-			
-			color: #222;
-		}
-#container{
-			background: #fff;
-			width: 900px;
-            height: 1000px;
-			padding: 35px;
-			margin: 0 auto 15px auto;
-			overflow: hidden;
-			box-shadow: 0 0 6px #ccc;
-            display: grid;
-            grid-auto-columns: 1fr 3fr;
-            grid-template-areas: 
-                "header header"
-                "side main"
-    
+    * {
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
 }
+.liner{
+    width:100px;
+    border:3px solid #c1d3d5;
+}
+.contacts{
+
+}
+h1{
+color:white;    
+}
+h3{
+    color:grey;
+}
+
+body {
+    background: #d5d1d1;
+    margin: 0;
+    padding: 0;
+    font-family:  'Encode Sans Expanded', sans-serif;
+    line-height: 18px;
+   color: #798486;
+/*    font-size: 12px;*/
+			
+/*    color: #222;*/
+
+}
+#container {
+    background-color:#e7e7e7;
+    width: 900px;
+    margin: 0 auto 15px auto;
+    overflow: hidden;		
+    box-shadow: 0 0 6px #ccc;
+}
+
 .header{
-    grid-area: header;
+    padding: 35px;
+    height:300px;
+    background-color:#c1d3d5;
+    text-align: center;
+
+}
+.profile-picture{
+    margin:0 auto;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/placeholder.jpg);
+    background-repeat: no-repeat;
+    background-size: 200px;
+}
+.side , .main{
+    display:inline-block;
+    padding: 35px;
+    height:inherit;
+    vertical-align:top;
 }
 .side{
-    grid-area:side;
+     width:30%;
+    background-color:white;
 }
 .main{
-    grid-area:main;
+     width:70%;
+  
 }
-</style>
-</head>
+
+.company , .title , .inistitution, .course {
+    display: inline;
+}
+.work, .education{
+    margin-top: 20px;
+}
+    
+    </style>
 <body>
     <div id="container" >
         <div class="header">
-            hasdasd
+<!--           <img src="./img/placeholder.jpg" alt="profile picture" class="profile-picture">-->
+           <div class="profile-picture"></div>
+            <h1>MY NAME</h1>
         </div>
-        <daiv class="side">
-            side
-        </daiv>
-        <div class="main">
-            maian
+        <div class="side">
+           <div class="personal-info">
+            <h3>PERSONAL PROFILE</h3>
+            <div class="liner"></div>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, quidem nulla numquam tempore illum eius. Reiciendis aspernatur sint numquam hic. Qui, ea, possimus. Quisquam quod eveniet consectetur voluptatum officia pariatur. </p>
+           </div>
+           <div class="contacts">
+               <h3>CONTACT</h3>
+               <div class="liner"></div>
+               <div class="address contact">
+                  <h4>Address</h4>
+                  <p>SomeWhere</p>
+               </div>
+               <div class="email contact">
+                   <h4>Email</h4>
+                   <p>myName@mail.com</p>
+               </div>
+               <div class="phone contact">
+               <h4>Phone</h4>
+               <p>0002346512</p>    
+               </div>
+               <div class="website">
+                   <h4>Websites</h4>
+                   <p>www.mywebsites.com</p>
+               </div>
+               <h3>INTERESTS</h3>
+               <div class="liner"></div>
+                <div class="intrests">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, amet placeat deserunt ipsa maiores et ullam nobis nostrum magnam recusandae vel aspernatur tempora ad illo nulla enim dicta iste saepe quaerat facere accusamus facilis sed repudiandae assumenda. At eos, sed iure amet labore quo quaerat placeat perspiciatis iste, blanditiis, quisquam.
+                    </p>
+                </div>
+               
+           </div>
+        
+            
+            
+            
+            
+            
+            
+        </div><div class="main">
+                  <h3>SKILLS</h3>
+               <div class="liner"></div>
+               <div class="skills">
+                  <p>
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maiores laborum, aut quisquam provident dignissimos perferendis voluptatibus magni. At eligendi impedit sequi aspernatur voluptates nemo magni quaerat laboriosam, molestias, esse accusamus, quisquam earum perspiciatis! Optio non, totam voluptas veritatis esse sint, distinctio nostrum, laboriosam unde eos earum dicta iusto. Voluptas minus dignissimos nostrum inventore consectetur dolor odit temporibus quasi tempora.   
+                  </p>
+               </div>
+                <h3>WORK EXPERIENCE</h3>
+               <div class="liner"></div>
+               <div class="work">
+                   <h4 class="company">My COMPANY</h4>, 
+                   <h5 class="title">web Developer</h5>
+                   <p>
+                   <span class="StartDate">2015 </span>&mdash; <span class="endDate">Present</span>    
+                   </p>
+                   <div class="info">
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quasi quo saepe dolore quam, quia. Modi, facilis. Dolores, nobis, nulla
+                   </div>
+                   
+               </div>
+                <div class="work">
+                   <h4 class="company">My COMPANY</h4>, 
+                   <h5 class="title">web Developer</h5>
+                   <p>
+                   <span class="StartDate">2015 </span>&mdash; <span class="endDate">Present</span>    
+                   </p>
+                   <div class="info">
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quasi quo saepe dolore quam, quia. Modi, facilis. Dolores, nobis, nulla
+                   </div>
+                   
+               </div>
+               
+               <h3>EDUCATION</h3>
+               <div class="liner"></div>
+               
+               <div class="education">
+                   <h4 class="inistitution"> university</h4>, 
+                   <h5 class="course">IT</h5>
+                    <p>
+                   <span class="StartDate">2015 </span>&mdash; <span class="endDate">Present</span>    
+                   </p>
+                   <div class="info">
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quasi quo saepe dolore quam, quia. Modi, facilis. Dolores, nobis, nulla
+                   </div>
+               </div>
+               
+                    <div class="education">
+                   <h4 class="inistitution"> university</h4>, 
+                   <h5 class="course">IT</h5>
+                    <p>
+                   <span class="StartDate">2015 </span>&mdash; <span class="endDate">Present</span>    
+                   </p>
+                    <div class="info">
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quasi quo saepe dolore quam, quia. Modi, facilis. Dolores, nobis, nulla
+                   </div>
+            
+               </div>
+              
+            <div></div>
+            
+            
         </div>
         
-        
+        <div></div>
     </div>
     
     
-</body>
