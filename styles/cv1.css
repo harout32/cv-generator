@@ -33,11 +33,7 @@
 			color: #222;
 		}
 		/* ________________________________________________________ */
-/*
-		.rtl {
-			direction: rtl;
-		}
-*/
+
 		.clear {
 			clear: both;
 		}
@@ -58,18 +54,7 @@
 			text-align: center;
 		}
 		
-/*
-		#credit {
-			margin-bottom: 20px;
-			font-size: 11px;
-			color: #999;
-			text-align: center;
-		}
-			#credit a {
-				color: #999;
-			}
-*/
-		
+	
 		p label {
 			float: left;
 			margin-right: 10px;
@@ -78,13 +63,6 @@
 			p label span.colon {
 				float: right;
 			}
-/*
-		p span.value {
-			float: left;
-			width: 70%;
-			display: block;
-		}
-*/
 		
 		.section {
 			margin-bottom: 40px;
@@ -113,15 +91,10 @@
 
 		/* Sections _____________________________ */
 		
-		.section .title {
+		.section .titles , .work-edu {
 			border-bottom: 1px solid #ddd;
 			padding-bottom: 5px;
 		}
-/*
-		.section span.value {
-			display: block;
-		}
-*/
 		.section h3 span.l, .section span.r {
 			width: 49%;
 			float: left;
@@ -137,33 +110,8 @@
 				margin: 5px 0 5px 0;
 			}
 
-/*		 ___ photo ___ */
+
 /*
-		#photo {
-			width: 160px;
-			height: 200px;
-			overflow: hidden;
-			float: left;
-			margin-top: 12px;
-			border-radius: 4px;
-		}
-		#photo img {
-			width: 100%;
-			height: auto;
-		}
-
-		.header.photo {
-			margin-left: 190px;
-		}
-		.header.photo #title {
-			text-align: left;
-		}
-		.header.photo .basic-info {
-			float: none;
-			padding: 0;
-		}
-*/
-
 		@media screen and (max-width: 950px) {
 			body {
 				background: #fff;
@@ -173,4 +121,4 @@
 				padding: 0;
 				padding: 5px;
 			}
-		}
+		}*/

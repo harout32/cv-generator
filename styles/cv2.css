@@ -7,6 +7,9 @@ box-sizing: border-box;
     width:100px;
     border:3px solid #c1d3d5;
 }
+.clear{
+    clear:both;
+}
 .contacts{
 
 }
@@ -24,10 +27,6 @@ body {
     font-family:  'Encode Sans Expanded', sans-serif;
     line-height: 18px;
    color: #798486;
-/*    font-size: 12px;*/
-			
-/*    color: #222;*/
-
 }
 #container {
     background-color:#e7e7e7;
@@ -49,23 +48,27 @@ body {
     border-radius: 100px;
     width: 200px;
     height: 200px;
-    background-image: url(../img/placeholder.jpg);
     background-repeat: no-repeat;
-    background-size: 200px;
+    background-size:cover;
+    background-position: center;
 }
 .side , .main{
     display:inline-block;
     padding: 35px;
     height:inherit;
     vertical-align:top;
+    padding-bottom: 2500em;
+    margin-bottom: -2500em;
 }
 .side{
      width:30%;
     background-color:white;
+    float: left;
 }
 .main{
      width:70%;
-  
+    float: right;
+      background-color:#e7e7e7;
 }
 
 .company , .title , .inistitution, .course {

@@ -1,13 +1,10 @@
-<html lang="en">
+<html>
 <head>
-    <title>CV | 1</title>
+    <title>CV | 2</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded" rel="stylesheet">
-<!--    <link rel="stylesheet" href="styles/cv2.css">-->
-</head>
-<style>
+   <style>
     * {
 box-sizing: border-box;
 -webkit-box-sizing: border-box;
@@ -16,6 +13,9 @@ box-sizing: border-box;
 .liner{
     width:100px;
     border:3px solid #c1d3d5;
+}
+.clear{
+    clear:both;
 }
 .contacts{
 
@@ -34,10 +34,6 @@ body {
     font-family:  'Encode Sans Expanded', sans-serif;
     line-height: 18px;
    color: #798486;
-/*    font-size: 12px;*/
-			
-/*    color: #222;*/
-
 }
 #container {
     background-color:#e7e7e7;
@@ -59,70 +55,78 @@ body {
     border-radius: 100px;
     width: 200px;
     height: 200px;
-    background-image: url(../img/placeholder.jpg);
     background-repeat: no-repeat;
-    background-size: 200px;
+    background-size:cover;
+    background-position: center;
 }
 .side , .main{
     display:inline-block;
     padding: 35px;
     height:inherit;
     vertical-align:top;
+    padding-bottom: 2500em;
+    margin-bottom: -2500em;
 }
 .side{
      width:30%;
     background-color:white;
+    float: left;
 }
 .main{
      width:70%;
-  
+    float: right;
+      background-color:#e7e7e7;
 }
 
 .company , .title , .inistitution, .course {
     display: inline;
 }
-.work, .education{
-    margin-top: 20px;
+.work , .education{
+    margin-top: 20px
 }
     
+    
+    
     </style>
+</head>
+
 <body>
     <div id="container" >
-        <div class="header">
+        <div class="header name-par">
 <!--           <img src="./img/placeholder.jpg" alt="profile picture" class="profile-picture">-->
-           <div class="profile-picture"></div>
-            <h1>MY NAME</h1>
+           <div class="profile-picture" id="profile_picture"></div>
+            <h1 class="name-text">KEVIN SMITH</h1>
         </div>
         <div class="side">
-           <div class="personal-info">
+           <div class="personal">
             <h3>PERSONAL PROFILE</h3>
             <div class="liner"></div>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, quidem nulla numquam tempore illum eius. Reiciendis aspernatur sint numquam hic. Qui, ea, possimus. Quisquam quod eveniet consectetur voluptatum officia pariatur. </p>
+            <p class="info"> </p>
            </div>
-           <div class="contacts">
+           <div class="contacts basic">
                <h3>CONTACT</h3>
                <div class="liner"></div>
                <div class="address contact">
                   <h4>Address</h4>
-                  <p>SomeWhere</p>
+                  <p></p>
                </div>
-               <div class="email contact">
+               <div class=" contact">
                    <h4>Email</h4>
-                   <p>myName@mail.com</p>
+                   <p class="email"></p>
                </div>
-               <div class="phone contact">
+               <div class=" contact">
                <h4>Phone</h4>
-               <p>0002346512</p>    
+               <p class="phone"></p>    
                </div>
-               <div class="website">
+               <div class="contact">
                    <h4>Websites</h4>
-                   <p>www.mywebsites.com</p>
+                   <p class="website"></p>
                </div>
                <h3>INTERESTS</h3>
                <div class="liner"></div>
-                <div class="intrests">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, amet placeat deserunt ipsa maiores et ullam nobis nostrum magnam recusandae vel aspernatur tempora ad illo nulla enim dicta iste saepe quaerat facere accusamus facilis sed repudiandae assumenda. At eos, sed iure amet labore quo quaerat placeat perspiciatis iste, blanditiis, quisquam.
+                <div class="interests">
+                    <p class="info">
+                     
                     </p>
                 </div>
                
@@ -138,67 +142,57 @@ body {
                   <h3>SKILLS</h3>
                <div class="liner"></div>
                <div class="skills">
-                  <p>
-                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maiores laborum, aut quisquam provident dignissimos perferendis voluptatibus magni. At eligendi impedit sequi aspernatur voluptates nemo magni quaerat laboriosam, molestias, esse accusamus, quisquam earum perspiciatis! Optio non, totam voluptas veritatis esse sint, distinctio nostrum, laboriosam unde eos earum dicta iusto. Voluptas minus dignissimos nostrum inventore consectetur dolor odit temporibus quasi tempora.   
+                  <p class="info">   
                   </p>
                </div>
+               
+                   
+               
                 <h3>WORK EXPERIENCE</h3>
                <div class="liner"></div>
+               <span id="worksection">
                <div class="work">
-                   <h4 class="company">My COMPANY</h4>, 
-                   <h5 class="title">web Developer</h5>
+                   <h4 class="company"></h4>, 
+                   <h5 class="title"></h5>
                    <p>
-                   <span class="StartDate">2015 </span>&mdash; <span class="endDate">Present</span>    
+                   <span class="StartDate"></span>&mdash; <span class="endDate"></span>    
                    </p>
                    <div class="info">
-                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quasi quo saepe dolore quam, quia. Modi, facilis. Dolores, nobis, nulla
                    </div>
                    
                </div>
-                <div class="work">
-                   <h4 class="company">My COMPANY</h4>, 
-                   <h5 class="title">web Developer</h5>
-                   <p>
-                   <span class="StartDate">2015 </span>&mdash; <span class="endDate">Present</span>    
-                   </p>
-                   <div class="info">
-                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quasi quo saepe dolore quam, quia. Modi, facilis. Dolores, nobis, nulla
-                   </div>
-                   
-               </div>
-               
+               </span>
+
+               <span>
                <h3>EDUCATION</h3>
                <div class="liner"></div>
-               
+            <span id="educationsection">
                <div class="education">
-                   <h4 class="inistitution"> university</h4>, 
-                   <h5 class="course">IT</h5>
+                   <h4 class="inistitution"> </h4>, 
+                   <h5 class="course"></h5>
                     <p>
-                   <span class="StartDate">2015 </span>&mdash; <span class="endDate">Present</span>    
+                   <span class="StartDate"> </span>&mdash; <span class="endDate"></span>    
                    </p>
                    <div class="info">
-                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quasi quo saepe dolore quam, quia. Modi, facilis. Dolores, nobis, nulla
                    </div>
                </div>
+            </span>
+              </span>
                
-                    <div class="education">
-                   <h4 class="inistitution"> university</h4>, 
-                   <h5 class="course">IT</h5>
-                    <p>
-                   <span class="StartDate">2015 </span>&mdash; <span class="endDate">Present</span>    
-                   </p>
-                    <div class="info">
-                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quasi quo saepe dolore quam, quia. Modi, facilis. Dolores, nobis, nulla
-                   </div>
-            
-               </div>
               
-            <div></div>
-            
+<!--
+            <div><button>
+                <a href="https://www.sejda.com/html-to-pdf?save-link=https://harout32.github.io/cv-generator/cv2.html" target="_blank">Save to PDF</a>
+            </button></div>
+-->
+                    <div class="clear"></div>
             
         </div>
         
-        <div></div>
+
     </div>
+    <script src="scripts/info.json"></script>
+    <script src="scripts/CV.js"></script>
     
-    
+    </body>
+</html>

@@ -1,0 +1,236 @@
+<html>
+<head>
+    <title>CV | 3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded" rel="stylesheet">
+
+
+
+<style>
+    * {
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+   
+}
+.contacts{
+
+}
+hr{
+    color: #43434d;
+    border: 2px solid rgba( 0, 0, 0, 0.136 );
+    border-style:solid;
+    
+}
+h1{
+    color:#eff9f2;
+    font-size:60px;
+       line-height:55px;
+}
+h2{
+    color:#34313c;
+}
+h3{
+    color:#78a1bb;
+}
+h4{
+    color:#78a1bb;
+}
+h5{
+    color:#34313c;
+}
+
+body {
+    background: #d5d1d1;
+    margin: 0;
+    padding: 0;
+    font-family:  'Encode Sans Expanded', sans-serif;
+    line-height: 18px;
+    color: #eff9f2;
+/*    font-size: 12px;*/
+			
+/*    color: #222;*/
+
+}
+#container {
+    background-color:#ecfaf2;
+    width: 900px;
+    margin: 0 auto 0px auto;
+    overflow: hidden;		
+    box-shadow: 0 0 6px #ccc;
+    z-index: -1;
+}
+
+.header{
+    margin-top: 15px;
+/*    padding: 35px;*/
+    height:250px;
+    background-color:#78a1bb;
+    text-align: center;
+
+}
+.main{
+    width:650px;
+    float: right;
+    height:250px;
+}
+.aside-background{
+    background-color: #2f2f3a;
+    position:absolute;
+    width:225px;
+    height:inherit;
+    margin-left: 25px;
+    z-index: 0;
+    padding-bottom: 500em;
+    margin-bottom: -500em;
+    overflow: hidden;
+}
+.profile-picture{
+    margin:34 auto;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.side , .main{
+    display:inline-block;
+    padding: 35px;
+    height:inherit;
+    vertical-align:top;
+    float: right;
+    z-index: 1;
+    position: relative; 
+}
+.side{
+     width:225px;
+}
+.main{
+    width:650px;
+    color:#2f2f3a;
+}
+
+.company , .title , .inistitution, .course {
+    display: inline;
+}
+.work , .education{
+    margin-top: 20px
+}
+
+    
+</style>
+</head>
+
+<body>
+    <div id="container" >
+       <div class="aside-background"><div class="profile-picture" id="profile_picture"></div></div>
+        <div class="header">
+<!--           <img src="./img/placeholder.jpg" alt="profile picture" class="profile-picture">-->
+           <div class="main name-par">
+               
+                  <h1 class="name-text"> 
+               NATALIE SMITH
+             </h1>   
+           </div>
+        </div>
+        <div class="main">
+                  <h3>SKILLS</h3>
+               
+               <div class="skills">
+                  <p class="info">
+ 
+                  </p>
+               </div>
+               <hr>
+                <h3>WORK EXPERIENCE</h3>
+               <span id="worksection">
+               <div class="work">
+                   <h4 class="company"></h4>, 
+                   <h5 class="title"></h5>
+                   <p>
+                   <span class="StartDate"></span>&mdash; <span class="endDate"></span>    
+                   </p>
+                   <div class="info">
+                   </div>
+                   
+               </div>
+            </span>
+
+               <hr>
+               <h3>EDUCATION</h3>
+               
+                <span id="educationsection">
+               <div class="education">
+                   <h4 class="inistitution"> </h4>, 
+                   <h5 class="course"></h5>
+                    <p>
+                   <span class="StartDate"> </span>&mdash; <span class="endDate"></span>    
+                   </p>
+                   <div class="info">
+                   </div>
+               </div>
+            </span>
+               
+
+            
+              <hr>
+<!--            aside section-->
+       
+        </div>
+        <div class="side">
+        
+             
+         
+          
+           <div class="personal">
+            <h3>PERSONAL PROFILE</h3>
+            <p class="info"> </p>
+           </div>
+           <hr>
+          
+           <div class="contacts">
+              <span class="basic">
+               <h3>CONTACT</h3>
+               
+               <div class=" contact">
+                  <h4>Address</h4>
+                  <p class="address"></p>
+               </div>
+               <div class=" contact">
+                   <h4 >Email</h4>
+                   <p class="email"></p>
+               </div>
+               <div class=" contact">
+               <h4>Phone</h4>
+               <p class="phone"></p>    
+               </div>
+               <div class="contact">
+                   <h4>Websites</h4>
+                   <p class="website"></p>
+               </div>
+           </span>
+               <hr>
+               <h3>INTERESTS</h3>
+               
+                <div class="interests">
+                    <p class="info">
+
+                    </p>
+                </div>
+                <hr>
+               
+           </div>
+        
+            
+            
+            
+            
+            
+            
+        </div>
+    </div>
+    <script src="scripts/CV.js"></script>
+    </body>
+</html>

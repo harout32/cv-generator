@@ -2,7 +2,7 @@
 function show(id) {
     //display the section of the form
     var main = document.getElementById('mainForm').children;
-    console.log(main);
+
     for (var i = 0; i < main.length; i++) {
         main[i].style.display = 'none';
     }
@@ -15,9 +15,9 @@ function show(id) {
     var buttons = document.getElementById('buttons').children;
     for(var i = 0 ; i<buttons.length ; i++){
         buttons.item(i);
-        buttons.item(i).className = '';
+        buttons.item(i).className = 'hover';
     }
-document.getElementById(id+'Button').className = 'button-active';
+document.getElementById(id+'Button').className = ' hover button-active';
 };
 
 
@@ -35,7 +35,7 @@ templates.forEach(function(el) {
 function addField(className) {
 var edu = document.querySelector('.'+className);
 var eduCopy = edu.cloneNode(true);
-    eduCopy.querySelectorAll('INPUT').forEach(function(el){
+    eduCopy.querySelectorAll('INPUT, TEXTAREA').forEach(function(el){
         el.value = '';
     });
     edu.parentElement.appendChild(eduCopy);
@@ -74,7 +74,7 @@ function submit () {
     //let the value of the work, edu keys be array and push objects into it
     if(inputs[i].id === 'work'|| inputs[i].id === 'education'){
         
-    var className = inputs[i].firstElementChild.className
+    var className = inputs[i].getElementsByTagName('span')[1].className;
         console.log(className);
         obj[inputs[i].id] = [];
     inputs[i].querySelectorAll('.'+className).forEach(function(el) {
@@ -92,16 +92,43 @@ function submit () {
         for (var j = 0; j < subInputs.length; j++) {
             var title = inputs[i].id;
             
-            obj[title][subInputs[j].name] = subInputs[j].value.trim().length > 0 ? subInputs[j].value : null;
+            obj[title][subInputs[j].name] = subInputs[j].value;
         }
         }
-        
-        
-        
-        
     }
     form.reset();
     console.log(obj);
     localStorage.setItem('cvInfo',JSON.stringify(obj));
   window.location = window.location.href.replace(/\bindex.html\b/,obj.template+'.html' );
 };
+
+
+
+
+
+
+//upload profile Picture 
+
+function upload(input){
+    console.log(input.files);
+    var reader = new FileReader();
+    reader.onload = function (e) {
+        localStorage.setItem('profile_pic',e.target.result);
+    }
+//    reader.onloadend
+    reader.readAsDataURL(input.files[0]);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
