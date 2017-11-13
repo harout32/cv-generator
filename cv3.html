@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded" rel="stylesheet">
 
-
+<!--<link rel="stylesheet" href="./styles/cv3.css">-->
 
 <style>
-    * {
+* {
 box-sizing: border-box;
 -webkit-box-sizing: border-box;
 -moz-box-sizing: border-box;
@@ -77,14 +77,18 @@ body {
 }
 .aside-background{
     background-color: #2f2f3a;
-    position:absolute;
+    position:relative;
     width:225px;
-    height:inherit;
+    height:100%;
     margin-left: 25px;
     z-index: 0;
     padding-bottom: 500em;
     margin-bottom: -500em;
+    padding-top: 34px;
     overflow: hidden;
+    top: 0;
+    bottom: 0;
+
 }
 .profile-picture{
     margin:34 auto;
@@ -117,8 +121,8 @@ body {
 }
 .work , .education{
     margin-top: 20px
-}
-
+}    
+    
     
 </style>
 </head>
@@ -131,7 +135,7 @@ body {
            <div class="main name-par">
                
                   <h1 class="name-text"> 
-               NATALIE SMITH
+           
              </h1>   
            </div>
         </div>
@@ -231,6 +235,7 @@ body {
             
         </div>
     </div>
+      <a style="display: none" id="dowladLink" download="my-cv.pdf"></a>
     <script src="scripts/CV.js"></script>
     </body>
 </html>

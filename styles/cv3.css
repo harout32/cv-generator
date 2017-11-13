@@ -67,14 +67,17 @@ body {
 }
 .aside-background{
     background-color: #2f2f3a;
-    position:absolute;
+    position:relative;
     width:225px;
-    height:inherit;
+    height:100%;
     margin-left: 25px;
     z-index: 0;
     padding-bottom: 500em;
     margin-bottom: -500em;
     overflow: hidden;
+    top: 0;
+    bottom: 0;
+
 }
 .profile-picture{
     margin:34 auto;

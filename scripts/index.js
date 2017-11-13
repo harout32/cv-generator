@@ -112,6 +112,7 @@ function submit () {
 function upload(input){
     console.log(input.files);
     var reader = new FileReader();
+    
     reader.onload = function (e) {
         localStorage.setItem('profile_pic',e.target.result);
     }
